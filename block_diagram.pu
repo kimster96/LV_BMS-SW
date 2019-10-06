@@ -1,0 +1,6 @@
+@startuml
+[LTC IC] - SPI 
+SPI - [LTC task]
+[LTC task] - raw_voltages_queue
+raw_voltages_queue - [BMS logic task]
+@enduml

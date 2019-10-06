@@ -1,0 +1,6 @@
+[submodule "SAM_libraries"]
+	path = SAM_libraries
+	url = https://github.com/kthfspe/SAM_libraries
+[submodule "src/SAM_libraries"]
+	path = src/SAM_libraries
+	url = https://github.com/kthfspe/SAM_libraries.git
