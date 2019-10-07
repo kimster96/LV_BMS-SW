@@ -3,6 +3,7 @@
 /** 
  * \mainpage
  * 
+ * This is an introduction
  * \title LV BMS Softwareeeee
  * \author Jordi Altayó
  */
