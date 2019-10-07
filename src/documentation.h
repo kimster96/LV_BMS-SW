@@ -4,4 +4,5 @@
 * \mainpage
 * 
 * \title LV BMS Software
+* \author Jordi Altayó
 */
