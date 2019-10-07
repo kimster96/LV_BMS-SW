@@ -3,6 +3,6 @@
 /** 
 * \mainpage
 * 
-* \title LV BMS Software
+* \title LV BMS Softwareeeee
 * \author Jordi Altayó
 */
