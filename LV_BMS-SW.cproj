@@ -33,9 +33,15 @@
         <options>
           <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
           <option id="sam0.drivers.system" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="thirdparty.os.freertos.version" value="Add" config="7.4.2" content-id="Atmel.ASF" />
+          <option id="sam0.drivers.sercom.spi" value="Add" config="polled" content-id="Atmel.ASF" />
+          <option id="sam0.drivers.can" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="sam0.drivers.port" value="Add" config="" content-id="Atmel.ASF" />
           <option id="sam0.utils.linker_scripts" value="Add" config="" content-id="Atmel.ASF" />
         </options>
-        <configurations />
+        <configurations>
+          <configuration key="config.thirdparty.os.freertos-7_4_2.memory_manager" value="1_static_allocation" default="1_static_allocation" content-id="Atmel.ASF" />
+        </configurations>
         <files>
           <file path="src/main.c" framework="" version="" source="common2/applications/user_application/main.c" changed="False" content-id="Atmel.ASF" />
           <file path="src/config/conf_board.h" framework="" version="" source="common2/applications/user_application/user_board/config_samc21/conf_board.h" changed="False" content-id="Atmel.ASF" />
@@ -189,6 +195,46 @@
           <file path="src/ASF/thirdparty/CMSIS/Lib/license.txt" framework="" version="" source="thirdparty/CMSIS/Lib/license.txt" changed="False" content-id="Atmel.ASF" />
           <file path="src/ASF/thirdparty/CMSIS/README.txt" framework="" version="" source="thirdparty/CMSIS/README.txt" changed="False" content-id="Atmel.ASF" />
           <file path="src/ASF/thirdparty/CMSIS/license.txt" framework="" version="" source="thirdparty/CMSIS/license.txt" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/can/can.c" framework="" version="3.46.0" source="sam0\drivers\can\can.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/can/can.h" framework="" version="3.46.0" source="sam0\drivers\can\can.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/can/quick_start_fd/qs_can_fd.h" framework="" version="3.46.0" source="sam0\drivers\can\quick_start_fd\qs_can_fd.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/can/quick_start/qs_can_basic.h" framework="" version="3.46.0" source="sam0\drivers\can\quick_start\qs_can_basic.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/Config/conf_can.h" framework="" version="3.46.0" source="sam0\drivers\can\module_config\conf_can.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/port/port.c" framework="" version="3.46.0" source="sam0\drivers\port\port.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/port/quick_start/qs_port_basic.h" framework="" version="3.46.0" source="sam0\drivers\port\quick_start\qs_port_basic.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/port/port.h" framework="" version="3.46.0" source="sam0\drivers\port\port.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/sercom.c" framework="" version="3.46.0" source="sam0\drivers\sercom\sercom.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/sercom_pinout.h" framework="" version="3.46.0" source="sam0\drivers\sercom\sercom_pinout.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/sercom.h" framework="" version="3.46.0" source="sam0\drivers\sercom\sercom.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/spi/spi.c" framework="" version="3.46.0" source="sam0\drivers\sercom\spi\spi.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/spi/spi.h" framework="" version="3.46.0" source="sam0\drivers\sercom\spi\spi.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/spi/quick_start_slave/qs_spi_slave_basic.h" framework="" version="3.46.0" source="sam0\drivers\sercom\spi\quick_start_slave\qs_spi_slave_basic.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/spi/quick_start_dma/qs_spi_dma_use.h" framework="" version="3.46.0" source="sam0\drivers\sercom\spi\quick_start_dma\qs_spi_dma_use.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam0/drivers/sercom/spi/quick_start_master/qs_spi_master_basic.h" framework="" version="3.46.0" source="sam0\drivers\sercom\spi\quick_start_master\qs_spi_master_basic.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/Config/conf_spi.h" framework="" version="3.46.0" source="sam0\drivers\sercom\spi\module_config\conf_spi.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/list.c" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\list.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/croutine.c" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\croutine.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/queue.c" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\queue.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/tasks.c" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\tasks.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/timers.c" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\timers.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/readme.txt" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\readme.txt" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/readme.txt" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\readme.txt" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/timers.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\timers.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/list.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\list.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/semphr.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\semphr.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/mpu_wrappers.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\mpu_wrappers.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/croutine.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\croutine.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/queue.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\queue.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/StackMacros.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\StackMacros.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/portable.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\portable.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/FreeRTOS.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\FreeRTOS.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/projdefs.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\projdefs.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include/task.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\include\task.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/Config/FreeRTOSConfig.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\module_config\FreeRTOSConfig.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/readme.txt" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\portable\readme.txt" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0/port.c" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\portable\GCC\ARM_CM0\port.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0/portmacro.h" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\portable\GCC\ARM_CM0\portmacro.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/MemMang/heap_1.c" framework="" version="3.46.0" source="thirdparty\freertos\freertos-7.4.2\Source\portable\MemMang\heap_1.c" changed="False" content-id="Atmel.ASF" />
         </files>
         <documentation help="http://asf.atmel.com/docs/3.46.0/common.applications.user_application.sam0_system.user_board.atsamc21e16a/html/index.html" />
         <offline-documentation help="" />
@@ -213,6 +259,8 @@
       <Value>NDEBUG</Value>
       <Value>BOARD=USER_BOARD</Value>
       <Value>ARM_MATH_CM0PLUS=true</Value>
+      <Value>SPI_CALLBACK_MODE=false</Value>
+      <Value>__FREERTOS__</Value>
     </ListValues>
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
@@ -239,6 +287,12 @@
       <Value>../src/ASF/common2/boards/user_board</Value>
       <Value>../src</Value>
       <Value>../src/config</Value>
+      <Value>../src/ASF/sam0/drivers/can</Value>
+      <Value>../src/ASF/sam0/drivers/port</Value>
+      <Value>../src/ASF/sam0/drivers/sercom</Value>
+      <Value>../src/ASF/sam0/drivers/sercom/spi</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
@@ -284,9 +338,15 @@
       <Value>../src/ASF/common2/boards/user_board</Value>
       <Value>../src</Value>
       <Value>../src/config</Value>
+      <Value>../src/ASF/sam0/drivers/can</Value>
+      <Value>../src/ASF/sam0/drivers/port</Value>
+      <Value>../src/ASF/sam0/drivers/sercom</Value>
+      <Value>../src/ASF/sam0/drivers/sercom/spi</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
-  <armgcc.preprocessingassembler.general.AssemblerFlags>-DARM_MATH_CM0PLUS=true -DBOARD=USER_BOARD</armgcc.preprocessingassembler.general.AssemblerFlags>
+  <armgcc.preprocessingassembler.general.AssemblerFlags>-DARM_MATH_CM0PLUS=true -DBOARD=USER_BOARD -DSPI_CALLBACK_MODE=false -D__FREERTOS__</armgcc.preprocessingassembler.general.AssemblerFlags>
   <armgcc.preprocessingassembler.general.IncludePaths>
     <ListValues>
       <Value>../src/ASF/common/boards</Value>
@@ -311,6 +371,12 @@
       <Value>../src/ASF/common2/boards/user_board</Value>
       <Value>../src</Value>
       <Value>../src/config</Value>
+      <Value>../src/ASF/sam0/drivers/can</Value>
+      <Value>../src/ASF/sam0/drivers/port</Value>
+      <Value>../src/ASF/sam0/drivers/sercom</Value>
+      <Value>../src/ASF/sam0/drivers/sercom/spi</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
 </ArmGcc>
@@ -329,6 +395,8 @@
       <Value>DEBUG</Value>
       <Value>BOARD=USER_BOARD</Value>
       <Value>ARM_MATH_CM0PLUS=true</Value>
+      <Value>SPI_CALLBACK_MODE=false</Value>
+      <Value>__FREERTOS__</Value>
     </ListValues>
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
@@ -355,6 +423,12 @@
       <Value>../src/ASF/common2/boards/user_board</Value>
       <Value>../src</Value>
       <Value>../src/config</Value>
+      <Value>../src/ASF/sam0/drivers/can</Value>
+      <Value>../src/ASF/sam0/drivers/port</Value>
+      <Value>../src/ASF/sam0/drivers/sercom</Value>
+      <Value>../src/ASF/sam0/drivers/sercom/spi</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
@@ -401,10 +475,16 @@
       <Value>../src/ASF/common2/boards/user_board</Value>
       <Value>../src</Value>
       <Value>../src/config</Value>
+      <Value>../src/ASF/sam0/drivers/can</Value>
+      <Value>../src/ASF/sam0/drivers/port</Value>
+      <Value>../src/ASF/sam0/drivers/sercom</Value>
+      <Value>../src/ASF/sam0/drivers/sercom/spi</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
   <armgcc.assembler.debugging.DebugLevel>Default (-g)</armgcc.assembler.debugging.DebugLevel>
-  <armgcc.preprocessingassembler.general.AssemblerFlags>-DARM_MATH_CM0PLUS=true -DBOARD=USER_BOARD</armgcc.preprocessingassembler.general.AssemblerFlags>
+  <armgcc.preprocessingassembler.general.AssemblerFlags>-DARM_MATH_CM0PLUS=true -DBOARD=USER_BOARD -DSPI_CALLBACK_MODE=false -D__FREERTOS__</armgcc.preprocessingassembler.general.AssemblerFlags>
   <armgcc.preprocessingassembler.general.IncludePaths>
     <ListValues>
       <Value>../src/ASF/common/boards</Value>
@@ -429,6 +509,12 @@
       <Value>../src/ASF/common2/boards/user_board</Value>
       <Value>../src</Value>
       <Value>../src/config</Value>
+      <Value>../src/ASF/sam0/drivers/can</Value>
+      <Value>../src/ASF/sam0/drivers/port</Value>
+      <Value>../src/ASF/sam0/drivers/sercom</Value>
+      <Value>../src/ASF/sam0/drivers/sercom/spi</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/include</Value>
+      <Value>../src/ASF/thirdparty/freertos/freertos-7.4.2/Source/portable/GCC/ARM_CM0</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
   <armgcc.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcc.preprocessingassembler.debugging.DebugLevel>
@@ -447,6 +533,16 @@
     <Folder Include="src\ASF\common\utils\interrupt\" />
     <Folder Include="src\ASF\sam0\" />
     <Folder Include="src\ASF\sam0\drivers\" />
+    <Folder Include="src\ASF\sam0\drivers\can\" />
+    <Folder Include="src\ASF\sam0\drivers\can\quick_start\" />
+    <Folder Include="src\ASF\sam0\drivers\can\quick_start_fd\" />
+    <Folder Include="src\ASF\sam0\drivers\port\" />
+    <Folder Include="src\ASF\sam0\drivers\port\quick_start\" />
+    <Folder Include="src\ASF\sam0\drivers\sercom\" />
+    <Folder Include="src\ASF\sam0\drivers\sercom\spi\" />
+    <Folder Include="src\ASF\sam0\drivers\sercom\spi\quick_start_dma\" />
+    <Folder Include="src\ASF\sam0\drivers\sercom\spi\quick_start_master\" />
+    <Folder Include="src\ASF\sam0\drivers\sercom\spi\quick_start_slave\" />
     <Folder Include="src\ASF\sam0\drivers\system\" />
     <Folder Include="src\ASF\sam0\drivers\system\clock\" />
     <Folder Include="src\ASF\sam0\drivers\system\clock\clock_samc20_c21\" />
@@ -480,12 +576,28 @@
     <Folder Include="src\ASF\thirdparty\CMSIS\Include\" />
     <Folder Include="src\ASF\thirdparty\CMSIS\Lib\" />
     <Folder Include="src\ASF\thirdparty\CMSIS\Lib\GCC\" />
+    <Folder Include="src\ASF\thirdparty\freertos\" />
+    <Folder Include="src\ASF\thirdparty\freertos\freertos-7.4.2\" />
+    <Folder Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\" />
+    <Folder Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\" />
+    <Folder Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\" />
+    <Folder Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\GCC\" />
+    <Folder Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\GCC\ARM_CM0\" />
+    <Folder Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\MemMang\" />
     <Folder Include="src\config\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\asf.h">
       <SubType>compile</SubType>
     </None>
+    <Compile Include="..\..\SA\can1.c">
+      <SubType>compile</SubType>
+      <Link>src\can1.c</Link>
+    </Compile>
+    <Compile Include="..\..\SA\can1.h">
+      <SubType>compile</SubType>
+      <Link>src\can1.h</Link>
+    </Compile>
     <Compile Include="src\ASF\common2\boards\user_board\init.c">
       <SubType>compile</SubType>
     </Compile>
@@ -586,6 +698,15 @@
       <SubType>compile</SubType>
     </None>
     <None Include="src\ASF\thirdparty\CMSIS\README.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\readme.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\readme.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\readme.txt">
       <SubType>compile</SubType>
     </None>
     <None Include="src\config\conf_clocks.h">
@@ -849,6 +970,51 @@
     <Compile Include="src\ASF\common\utils\interrupt\interrupt_sam_nvic.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\ASF\sam0\drivers\can\can.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\sam0\drivers\can\can.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\sam0\drivers\can\quick_start_fd\qs_can_fd.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\sam0\drivers\can\quick_start\qs_can_basic.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\sam0\drivers\port\port.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\sam0\drivers\port\quick_start\qs_port_basic.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\sam0\drivers\port\port.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\sam0\drivers\sercom\sercom.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\sam0\drivers\sercom\sercom_pinout.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\sam0\drivers\sercom\sercom.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\sam0\drivers\sercom\spi\quick_start_slave\qs_spi_slave_basic.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\sam0\drivers\sercom\spi\quick_start_dma\qs_spi_dma_use.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\sam0\drivers\sercom\spi\quick_start_master\qs_spi_master_basic.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\sam0\drivers\sercom\spi\spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\sam0\drivers\sercom\spi\spi.h">
+      <SubType>compile</SubType>
+    </None>
     <Compile Include="src\ASF\sam0\drivers\system\clock\clock_samc20_c21\clock.c">
       <SubType>compile</SubType>
     </Compile>
@@ -936,6 +1102,72 @@
     <Compile Include="src\ASF\sam0\utils\syscalls\gcc\syscalls.c">
       <SubType>compile</SubType>
     </Compile>
+    <None Include="src\config\conf_can.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_spi.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\croutine.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\timers.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\list.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\semphr.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\mpu_wrappers.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\croutine.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\queue.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\StackMacros.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\portable.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\FreeRTOS.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\projdefs.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\include\task.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\list.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\GCC\ARM_CM0\port.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\GCC\ARM_CM0\portmacro.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\portable\MemMang\heap_1.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\queue.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\tasks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\freertos\freertos-7.4.2\Source\timers.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\config\FreeRTOSConfig.h">
+      <SubType>compile</SubType>
+    </None>
     <Compile Include="src\main.c">
       <SubType>compile</SubType>
     </Compile>
