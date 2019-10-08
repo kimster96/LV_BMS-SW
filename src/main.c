@@ -6,11 +6,13 @@
  * \section 
  * \tableofcontents
  * 
- * \section Requirements
+ * \section "Requirements"
  * some requirements bla bla bla
- * \subsection FSG Rules
- * \section RTOS structure
  *
+ * \subsection "FSG Rules"
+ * bla bla bla
+ *
+ * \section "RTOS structure"
  * Here a small diagram
  * 
  * \image html task_diagram.png "Task diagram"
