@@ -3,7 +3,6 @@
  *
  * This is the main page of the LV BMS software documentation.
  *
- * \section 
  * \tableofcontents
  * 
  * \section requirements Requirements
