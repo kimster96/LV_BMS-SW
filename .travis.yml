@@ -13,7 +13,7 @@ script:
   - doxygen Doxyfile
   - ls
   - git status  
-    #  - cp *png html\
+  - cp task_diagram.png html
 
 deploy:
   provider: pages
