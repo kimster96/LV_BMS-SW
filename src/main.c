@@ -9,7 +9,7 @@
  *
  * Here a small diagram
  * 
- * \image html ./img/task_diagram.png "Task diagram"
+ * \image html task_diagram.png "Task diagram"
  *
  */
 

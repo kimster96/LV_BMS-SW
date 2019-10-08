@@ -11,6 +11,7 @@ addons:
 
 script:
   - doxygen Doxyfile
+  - cp *png html\
 
 deploy:
   provider: pages
