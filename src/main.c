@@ -16,6 +16,7 @@
  * \li Transmit the above measurements through CAN
  * \li Interrupt the output if the voltages exceed the limits for more than 500 ms
  * \li Interrupt the output if the temperatures exceed the limits for more than 1 s
+ * 
  * Internal requirements:
  * \li Configurable thresholds via CAN messages
  * \li Store thresholds on non volatile memory and retreive the on power-up
