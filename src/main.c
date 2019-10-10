@@ -33,10 +33,13 @@
  *
  */
 
-
 #include <asf.h>
 
-int main (void)
-{
+/**
+ * This is the main function
+ *
+ * @param arg this is an input argument
+ */
+int main (void) {
 	system_init();
 }
