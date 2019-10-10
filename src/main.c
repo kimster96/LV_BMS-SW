@@ -21,9 +21,9 @@
  * \li Configurable thresholds via CAN messages
  * \li Store thresholds on non volatile memory and retreive the on power-up
  *
- * \subsection rules FSG Rules
- * 
- * bla bla bla
+ * \section bloc_diagram Block diagram
+ *
+ * This is the block diagram of the system 
  *
  * \section rtos RTOS structure
  *
