@@ -1,0 +1,23 @@
+sudo: false
+
+branches:
+  only:
+    - master
+
+addons:
+  apt:
+    packages:
+      - doxygen
+
+script:
+  - doxygen Doxyfile
+    #  - ls
+    #  - git status  
+    #  - cp task_diagram.png html
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_REPO_TOKEN
+  on:
+    branch: master

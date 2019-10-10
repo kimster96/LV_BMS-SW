@@ -1,0 +1,6 @@
+@startuml
+"LTC IC"   <- "LTC task" : start voltage\nconversion
+"LTC task" -> "LTC task" : wait for\nconversion time
+"LTC IC"   <- "LTC task" : request voltages
+"LTC IC"   -> "LTC task" : read voltages
+@enduml
